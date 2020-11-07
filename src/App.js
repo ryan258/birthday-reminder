@@ -13,9 +13,8 @@ function App() {
         <h1 className="h3">{people.length} birthdays today</h1>
         {/* pass the list of people through a people prop */}
         <List people={people} />
-        <button onClick={() => console.log('you clicked me!')}>
-          clear all
-        </button>
+        {/* reset the state of people to an empty array */}
+        <button onClick={() => setPeople([])}>clear all</button>
       </section>
     </main>
   );
